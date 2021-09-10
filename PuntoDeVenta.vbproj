@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C32A390-A9CA-46BA-A147-12A4A6F13DE3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PuntoDeVenta.My.MyApplication</StartupObject>
+    <RootNamespace>PuntoDeVenta</RootNamespace>
+    <AssemblyName>PuntoDeVenta</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\adria\Desktop\setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>108</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PuntoDeVenta.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PuntoDeVenta.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cami.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FA7F5358CB78DEAEDF0834BDC0A486AD69661039</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PuntoDeVenta_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agranel.Designer.vb">
+      <DependentUpon>Agranel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agranel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarC.Designer.vb">
+      <DependentUpon>AgregarC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarP.Designer.vb">
+      <DependentUpon>AgregarP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarP.Designer.vb">
+      <DependentUpon>ActualizarP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteConsult.Designer.vb">
+      <DependentUpon>ClienteConsult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteConsult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientesFCon.Designer.vb">
+      <DependentUpon>ClientesFCon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesFCon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaFiltro.Designer.vb">
+      <DependentUpon>ConsultaFiltro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaFiltro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaP.Designer.vb">
+      <DependentUpon>ConsultaP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarPP.Designer.vb">
+      <DependentUpon>EliminarPP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarPP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Envases.Designer.vb">
+      <DependentUpon>Envases.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Envases.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ganancia.Designer.vb">
+      <DependentUpon>Ganancia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ganancia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GananciaC.Designer.vb">
+      <DependentUpon>GananciaC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GananciaC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lastconection.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lastconection.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoV.Designer.vb">
+      <DependentUpon>ListadoV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAdministrador.Designer.vb">
+      <DependentUpon>MenuAdministrador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdministrador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Provedores.Designer.vb">
+      <DependentUpon>Provedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Provedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvedoresCantidad.Designer.vb">
+      <DependentUpon>ProvedoresCantidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProvedoresCantidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuntooriginalUltimaCF.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PuntooriginalUltimaCF.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoVentaDataClientes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PuntoVentaDataClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoVentaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PuntoVentaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoVentaDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PuntoVentaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoVentaDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PuntoVentaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoVentaDataSetClientesF.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PuntoVentaDataSetClientesF.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoVentaDataSetClientesFiados.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PuntoVentaDataSetClientesFiados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoVentaDataSetProceduroPrueba.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PuntoVentaDataSetProceduroPrueba.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoVentaDataSetProductos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PuntoVentaDataSetProductos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoVentaDataSetProductosAClientesF.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PuntoVentaDataSetProductosAClientesF.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoVentaLastClient.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PuntoVentaLastClient.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoVentaSetVistaPrueba.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PuntoVentaSetVistaPrueba.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TotalDinero.Designer.vb">
+      <DependentUpon>TotalDinero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TotalDinero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Venta.Designer.vb">
+      <DependentUpon>Venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentaFiados.Designer.vb">
+      <DependentUpon>VentaFiados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentaFiados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ActualizarP.resx">
+      <DependentUpon>ActualizarP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agranel.resx">
+      <DependentUpon>Agranel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarC.resx">
+      <DependentUpon>AgregarC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarP.resx">
+      <DependentUpon>AgregarP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteConsult.resx">
+      <DependentUpon>ClienteConsult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientesFCon.resx">
+      <DependentUpon>ClientesFCon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaFiltro.resx">
+      <DependentUpon>ConsultaFiltro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaP.resx">
+      <DependentUpon>ConsultaP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarPP.resx">
+      <DependentUpon>EliminarPP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Envases.resx">
+      <DependentUpon>Envases.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ganancia.resx">
+      <DependentUpon>Ganancia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GananciaC.resx">
+      <DependentUpon>GananciaC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoV.resx">
+      <DependentUpon>ListadoV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdministrador.resx">
+      <DependentUpon>MenuAdministrador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Provedores.resx">
+      <DependentUpon>Provedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProvedoresCantidad.resx">
+      <DependentUpon>ProvedoresCantidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalDinero.resx">
+      <DependentUpon>TotalDinero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta.resx">
+      <DependentUpon>Venta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentaFiados.resx">
+      <DependentUpon>VentaFiados.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lastconection.xsc">
+      <DependentUpon>lastconection.xsd</DependentUpon>
+    </None>
+    <None Include="lastconection.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lastconection.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lastconection.xss">
+      <DependentUpon>lastconection.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="PuntoDeVenta_TemporaryKey.pfx" />
+    <None Include="PuntooriginalUltimaCF.xsc">
+      <DependentUpon>PuntooriginalUltimaCF.xsd</DependentUpon>
+    </None>
+    <None Include="PuntooriginalUltimaCF.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PuntooriginalUltimaCF.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PuntooriginalUltimaCF.xss">
+      <DependentUpon>PuntooriginalUltimaCF.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataClientes.xsc">
+      <DependentUpon>PuntoVentaDataClientes.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataClientes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PuntoVentaDataClientes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PuntoVentaDataClientes.xss">
+      <DependentUpon>PuntoVentaDataClientes.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSet.xsc">
+      <DependentUpon>PuntoVentaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PuntoVentaDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PuntoVentaDataSet.xss">
+      <DependentUpon>PuntoVentaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSet1.xsc">
+      <DependentUpon>PuntoVentaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PuntoVentaDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PuntoVentaDataSet1.xss">
+      <DependentUpon>PuntoVentaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSet2.xsc">
+      <DependentUpon>PuntoVentaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PuntoVentaDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PuntoVentaDataSet2.xss">
+      <DependentUpon>PuntoVentaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSetClientesF.xsc">
+      <DependentUpon>PuntoVentaDataSetClientesF.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSetClientesF.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PuntoVentaDataSetClientesF.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PuntoVentaDataSetClientesF.xss">
+      <DependentUpon>PuntoVentaDataSetClientesF.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSetClientesFiados.xsc">
+      <DependentUpon>PuntoVentaDataSetClientesFiados.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSetClientesFiados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PuntoVentaDataSetClientesFiados.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PuntoVentaDataSetClientesFiados.xss">
+      <DependentUpon>PuntoVentaDataSetClientesFiados.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSetProceduroPrueba.xsc">
+      <DependentUpon>PuntoVentaDataSetProceduroPrueba.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSetProceduroPrueba.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PuntoVentaDataSetProceduroPrueba.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PuntoVentaDataSetProceduroPrueba.xss">
+      <DependentUpon>PuntoVentaDataSetProceduroPrueba.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSetProductos.xsc">
+      <DependentUpon>PuntoVentaDataSetProductos.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSetProductos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PuntoVentaDataSetProductos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PuntoVentaDataSetProductos.xss">
+      <DependentUpon>PuntoVentaDataSetProductos.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSetProductosAClientesF.xsc">
+      <DependentUpon>PuntoVentaDataSetProductosAClientesF.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaDataSetProductosAClientesF.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PuntoVentaDataSetProductosAClientesF.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PuntoVentaDataSetProductosAClientesF.xss">
+      <DependentUpon>PuntoVentaDataSetProductosAClientesF.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaLastClient.xsc">
+      <DependentUpon>PuntoVentaLastClient.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaLastClient.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PuntoVentaLastClient.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PuntoVentaLastClient.xss">
+      <DependentUpon>PuntoVentaLastClient.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaSetVistaPrueba.xsc">
+      <DependentUpon>PuntoVentaSetVistaPrueba.xsd</DependentUpon>
+    </None>
+    <None Include="PuntoVentaSetVistaPrueba.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PuntoVentaSetVistaPrueba.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PuntoVentaSetVistaPrueba.xss">
+      <DependentUpon>PuntoVentaSetVistaPrueba.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Logo_Mayte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icono13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icono3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icono7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icono67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\brand-identity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\customer-review.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\codigo-de-barras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pexels-simon-berger-1323550.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pexels-johannes-plenio-1103970.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\mother.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\mas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\diskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cami.ico" />
+    <Content Include="Logo_Mayte.ico" />
+    <None Include="Resources\logo_camila.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
